@@ -31,6 +31,8 @@ PS1="\[\033[1;32m\]\342\224\200\$([[ \$(/opt/vpnbash.sh) == *\"10.\"* ]] && echo
 
 ---
 
+## Update OS
+
 ```bash
 sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y
 ```
@@ -44,4 +46,11 @@ Import-Module PSWindowsUpdate
 Install-WindowsUpdate -AcceptAll
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 choco upgrade chocolatey -y
+choco info vscode
+choco install wsl2 python git vscode openssh openvpn netcat nmap wireshark burp-suite-free-edition heidisql sysinternals putty golang neo4j-community openjdk microsoft-windows-terminal
+RefreshEnv
+
+Add-MpPreference -ExclusionPath "C:\Users\admin\AppData\Local\Temp\chocolatey\"
+Add-MpPreference -ExclusionPath "C:\Users\admin\Documents\git-repos\"
+Add-MpPreference -ExclusionPath "C:\Users\admin\Documents\scripts\"
 ```
