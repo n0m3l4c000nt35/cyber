@@ -30,3 +30,18 @@ PS1="\[\033[1;32m\]\342\224\200\$([[ \$(/opt/vpnbash.sh) == *\"10.\"* ]] && echo
 - [Peek](https://github.com/phw/peek)
 
 ---
+
+```bash
+sudo apt update -y && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y
+```
+
+```powershell
+Get-ExecutionPolicy -List
+Set-ExecutionPolicy Unrestricted -Scope Process
+Get-ExecutionPolicy -List
+Install-Module PSWindowsUpdate
+Import-Module PSWindowsUpdate
+Install-WindowsUpdate -AcceptAll
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+choco upgrade chocolatey -y
+```
