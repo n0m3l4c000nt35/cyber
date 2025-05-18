@@ -47,10 +47,10 @@ Install-WindowsUpdate -AcceptAll
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 choco upgrade chocolatey -y
 choco info vscode
-choco install wsl2 python git vscode openssh openvpn netcat nmap wireshark burp-suite-free-edition heidisql sysinternals putty golang neo4j-community openjdk microsoft-windows-terminal
+choco install wsl2 python git vscode openssh openvpn nmap wireshark burp-suite-free-edition heidisql sysinternals putty golang neo4j-community openjdk microsoft-windows-terminal
 RefreshEnv
 
-Add-MpPreference -ExclusionPath "C:\Users\admin\AppData\Local\Temp\chocolatey\"
-Add-MpPreference -ExclusionPath "C:\Users\admin\Documents\git-repos\"
-Add-MpPreference -ExclusionPath "C:\Users\admin\Documents\scripts\"
+Add-MpPreference -ExclusionPath "C:\Users\$env:USERNAME\AppData\Local\Temp\chocolatey\"
+Add-MpPreference -ExclusionPath "C:\Users\$env:USERNAME\Documents\git-repos\"
+Add-MpPreference -ExclusionPath "C:\Users\$env:USERNAME\Documents\scripts\"
 ```
