@@ -54,3 +54,12 @@ Add-MpPreference -ExclusionPath "C:\Users\$env:USERNAME\AppData\Local\Temp\choco
 Add-MpPreference -ExclusionPath "C:\Users\$env:USERNAME\Documents\git-repos\"
 Add-MpPreference -ExclusionPath "C:\Users\$env:USERNAME\Documents\scripts\"
 ```
+
+##  Active Directory Enumeration & Attacks
+
+### From Linux
+
+| Tool | Description |
+| - | - |
+| [PowerView](https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1) | Obtiene información |
+| [SharpView](https://github.com/dmchell/SharpView) | Obtiene información |
