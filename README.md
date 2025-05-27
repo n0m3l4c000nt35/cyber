@@ -63,6 +63,7 @@ Add-MpPreference -ExclusionPath "C:\Users\$env:USERNAME\Documents\scripts\"
 | - | - | - | - |
 | [PowerView](https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1) | Obtiene información de un AD | Windows | PowerShell |
 | [SharpView](https://github.com/dmchell/SharpView) | Obtiene información de un AD | Windows | C# |
-| [SharpHound](https://github.com/SpecterOps/BloodHound-Legacy/tree/master/Collectors) | Obtiene información de un AD para usar en BloodHound | Windows | X |
+| [SharpHound](https://github.com/SpecterOps/BloodHound-Legacy/tree/master/Collectors) | Obtiene información de un AD para usar en BloodHound | Windows | C# |
 | [BloodHound](https://github.com/SpecterOps/BloodHound) | Visualiza las relaciones en un AD | X | X |
-| [BloodHound.py](https://github.com/fox-it/BloodHound.py) | Obtiene información de un AD | Linux | X |
+| [BloodHound.py](https://github.com/fox-it/BloodHound.py) | Obtiene información de un AD | Linux | Python |
+| [NetExec](https://www.netexec.wiki/ldap-protocol/bloodhound-ingestor) | Obtiene información de un AD | Linux | X |
