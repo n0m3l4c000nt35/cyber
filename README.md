@@ -59,8 +59,9 @@ Add-MpPreference -ExclusionPath "C:\Users\$env:USERNAME\Documents\scripts\"
 
 ### From Linux
 
-| Tool | Description |
-| - | - |
-| [PowerView](https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1) | Obtiene información |
-| [SharpView](https://github.com/dmchell/SharpView) | Obtiene información |
-| [BloodHound](https://github.com/SpecterOps/BloodHound) | Visualiza las relaciones en un AD |
+| Tool | Description | OS | Lenguaje |
+| - | - | - | - |
+| [PowerView](https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1) | Obtiene información de un AD | Windows | PowerShell |
+| [SharpView](https://github.com/dmchell/SharpView) | Obtiene información de un AD | Windows | C# |
+| [SharpHound](https://github.com/SpecterOps/BloodHound-Legacy/tree/master/Collectors) | Obtiene información de un AD para usar en BloodHound | Windows | X |
+| [BloodHound](https://github.com/SpecterOps/BloodHound) | Visualiza las relaciones en un AD | X | X |
