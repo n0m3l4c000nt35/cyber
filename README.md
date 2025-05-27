@@ -57,7 +57,7 @@ Add-MpPreference -ExclusionPath "C:\Users\$env:USERNAME\Documents\scripts\"
 
 ##  Active Directory Enumeration & Attacks
 
-### From Linux
+### Obtener y visualizar información de un AD
 
 | Tool | Description | OS | Lenguaje |
 | - | - | - | - |
