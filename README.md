@@ -65,3 +65,4 @@ Add-MpPreference -ExclusionPath "C:\Users\$env:USERNAME\Documents\scripts\"
 | [SharpView](https://github.com/dmchell/SharpView) | Obtiene información de un AD | Windows | C# |
 | [SharpHound](https://github.com/SpecterOps/BloodHound-Legacy/tree/master/Collectors) | Obtiene información de un AD para usar en BloodHound | Windows | X |
 | [BloodHound](https://github.com/SpecterOps/BloodHound) | Visualiza las relaciones en un AD | X | X |
+| [BloodHound.py](https://github.com/fox-it/BloodHound.py) | Obtiene información de un AD | Linux | X |
