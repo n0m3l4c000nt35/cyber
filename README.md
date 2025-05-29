@@ -72,4 +72,6 @@ Add-MpPreference -ExclusionPath "C:\Users\$env:USERNAME\Documents\scripts\"
 
 ```bash
 kerbrute userenum -d domain.tld --dc <ip-dc> /wordlist/path -o valid_ad_users
+nxc smb <ip> -u '<user>' -p '<password>' --users
+rpcclient -U '<user>' --password '<password>' <ip>
 ```
