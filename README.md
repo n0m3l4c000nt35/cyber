@@ -67,3 +67,9 @@ Add-MpPreference -ExclusionPath "C:\Users\$env:USERNAME\Documents\scripts\"
 | [BloodHound](https://github.com/SpecterOps/BloodHound) | Visualiza las relaciones en un AD | X | X |
 | [BloodHound.py](https://github.com/fox-it/BloodHound.py) | Obtiene información de un AD | Linux | Python |
 | [NetExec](https://www.netexec.wiki/ldap-protocol/bloodhound-ingestor) | Obtiene información de un AD | Linux | X |
+
+### Enumerar usuarios
+
+```bash
+kerbrute userenum -d domain.tld --dc <ip-dc> /wordlist/path -o valid_ad_users
+```
