@@ -83,3 +83,7 @@ for u in $(cat <users-list>);do rpcclient -U "$u%" --password '<password>' -c "g
 kerbrute passwordspray -d <domain> --dc <ip> <users-list>  '<password>'
 nxc smb <ip> -u <users-list> -p '<password>'
 ```
+
+## Decompilers
+
+- [AvaloniaILSpy](https://github.com/icsharpcode/AvaloniaILSpy)
