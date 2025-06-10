@@ -86,6 +86,9 @@ nxc smb <ip> -u <users-list> -p '<password>'
 
 ## LDAP
 
+[Apache Directory Studio](https://directory.apache.org/studio/)
+> Apache Directory Studio is a complete directory tooling platform intended to be used with any LDAP server however it is particularly designed for use with ApacheDS.
+
 ```bash
 ldapsearch -H ldap://support.htb -x -D "ldap@support.htb" -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "dc=support,dc=htb" "(objectClass=*)"
 ldapsearch -H ldap://support.htb -x -D "ldap@support.htb" -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "dc=support,dc=htb" "Administrator"
