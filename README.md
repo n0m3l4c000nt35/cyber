@@ -68,6 +68,10 @@ Add-MpPreference -ExclusionPath "C:\Users\$env:USERNAME\Documents\scripts\"
 | [BloodHound.py](https://github.com/fox-it/BloodHound.py) | Obtiene información de un AD | Linux | Python |
 | [NetExec](https://www.netexec.wiki/ldap-protocol/bloodhound-ingestor) | Obtiene información de un AD | Linux | X |
 
+```bash
+nxc ldap 10.10.11.174 -d support.htb --dns-server 10.10.11.174 -u 'support' -p 'Ironside47pleasure40Watchful' --bloodhound -c All
+```
+
 ### Enumerar usuarios
 
 ```bash
