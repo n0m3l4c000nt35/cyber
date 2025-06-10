@@ -87,3 +87,7 @@ nxc smb <ip> -u <users-list> -p '<password>'
 ## Decompilers
 
 - [AvaloniaILSpy](https://github.com/icsharpcode/AvaloniaILSpy)
+
+## Miscellaneous
+[Wine](https://www.winehq.org/)
+> Permite correr software de Windows en otros sistemas operativos.
