@@ -84,6 +84,13 @@ kerbrute passwordspray -d <domain> --dc <ip> <users-list>  '<password>'
 nxc smb <ip> -u <users-list> -p '<password>'
 ```
 
+## LDAP
+
+```bash
+ldapsearch -H ldap://support.htb -x -D "ldap@support.htb" -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "dc=support,dc=htb" "(objectClass=*)"
+ldapsearch -H ldap://support.htb -x -D "ldap@support.htb" -w 'nvEfEK16^1aM4$e7AclUf8x$tRWxPWO1%lmz' -b "dc=support,dc=htb" "Administrator"
+```
+
 ## Decompilers
 
 - [AvaloniaILSpy](https://github.com/icsharpcode/AvaloniaILSpy)
